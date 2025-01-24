@@ -1,1 +1,1 @@
-web: gunicorn --chdir src/backend chatbot:app
+web: gunicorn src.backend.chatbot:app
