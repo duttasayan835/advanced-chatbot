@@ -1,1 +1,1 @@
-web: gunicorn src.backend.chatbot:app
+web: gunicorn wsgi:app
