@@ -1,1 +1,1 @@
-web: pip install -e . && gunicorn --pythonpath . wsgi:app
+web: pip install -e . && gunicorn --pythonpath . wsgi:application
