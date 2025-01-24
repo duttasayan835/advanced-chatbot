@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cyberpunk AI Chat</title>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="background-animation"></div>
+	<div class="cyberpunk-container">
+		<div class="chat-window neon-scroll">
+			<div id="chat-messages"></div>
+			<div class="typing-indicator hidden">
+				<div class="dot-flashing"></div>
+				<span class="neon-text">Bot is processing...</span>
+			</div>
+		</div>
+		
+		<div class="input-panel">
+			<div class="button-group">
+				<input type="file" id="file-upload" accept="image/*,.pdf,.txt" class="hidden-upload">
+				<button class="neon-button attachment-btn" id="file-upload-btn">
+					<span class="material-icons">attach_file</span>
+					<span class="attachment-badge hidden">0</span>
+				</button>
+				<button class="neon-button search-btn" id="search-btn">
+					<span class="material-icons">search</span>
+				</button>
+				<button class="neon-button theme-toggle" id="theme-toggle">
+					<span class="material-icons">dark_mode</span>
+				</button>
+			</div>
+
+			<input
+				type="text"
+				id="user-input"
+				class="neon-input"
+				placeholder="Drop your thoughts here..."
+			/>
+
+			<button class="neon-button send-btn" id="send-btn">
+				<span class="material-icons">send</span>
+			</button>
+		</div>
+	</div>
+	<script src="three-background.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
